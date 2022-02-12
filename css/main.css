@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+@font-face {
+  font-family: 'Vazir';
+  src: url("../font/vazir-font-v16.1.0/Vazir-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'dirooz';
+  src: url("../font/dirooz/Dirooz.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: inherit;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Vazir';
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: right;
+}
+
+body {
+  height: 100vh;
+  background-color: #666;
+}
+/*# sourceMappingURL=main.css.map */
