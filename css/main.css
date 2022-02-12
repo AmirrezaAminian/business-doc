@@ -27,6 +27,27 @@ body {
   text-align: right;
 }
 
+.footer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  border-top: 1px solid #ccc;
+}
+
+.footer__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  padding: 15px 0;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.footer__item:hover {
+  background-color: #ccc;
+}
+
 .sidebar {
   display: flex;
   align-items: center;
