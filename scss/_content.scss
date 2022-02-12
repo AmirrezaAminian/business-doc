@@ -1,0 +1,41 @@
+.content {
+    height: 100vh;
+    padding: 2rem;
+    align-items: center;
+    width: 55%;
+    margin: 0 auto;
+    background-color: #eee;
+    
+
+    &__header {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        font-family: sans-serif;
+        font-weight: 400;
+        border-bottom: 1px solid rgb(214, 214, 214);
+        padding-left: 28rem ;
+        padding-bottom: 3px;
+        padding-top: 3px;
+
+
+        img {
+            width: 4rem;
+        }
+
+        span {
+            margin-left: 20px;
+            color: #777;
+            font-size: 16px;
+        }
+
+
+        &--link {
+            text-decoration: none;
+            margin-left: 5px;
+            color: #222;
+            font-weight: 500;
+        }
+    }
+
+}
