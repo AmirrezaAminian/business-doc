@@ -32,6 +32,11 @@ body {
   justify-content: space-around;
   width: 100%;
   border-top: 1px solid #ccc;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: #fff;
 }
 
 .footer__item {
@@ -45,7 +50,27 @@ body {
 }
 
 .footer__item:hover {
-  background-color: #ccc;
+  background-color: #eee;
+}
+
+.main__topic {
+  margin-top: 50px;
+  font-family: "Vazir";
+  font-size: 3.5rem;
+}
+
+.main__topic span {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 500;
+}
+
+.main__img {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.main__img img {
+  width: 100%;
 }
 
 .sidebar {
@@ -186,6 +211,7 @@ body {
   visibility: hidden;
   transform: translateY(10px);
   border: 1px solid #eee;
+  box-shadow: 0 0 4rem rgba(17, 17, 17, 0.3);
 }
 
 .content__user--name--info:hover {

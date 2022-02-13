@@ -40,7 +40,11 @@ body {
     justify-content: space-around;
     width: 100%;
     border-top: 1px solid #ccc;
-
+     position: fixed;
+     bottom: 0;
+     left: 0;
+    z-index: 1000;
+    background-color: #fff;
 
 
     &__item {
@@ -54,7 +58,7 @@ body {
         cursor: pointer;
 
         &:hover{
-            background-color: #ccc;
+            background-color: #eee;
         }
 
 

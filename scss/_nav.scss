@@ -1,1 +1,25 @@
- 
+ .main{
+
+
+    &__topic{
+        margin-top: 50px;
+        font-family: $font-vazir;
+        font-size: 3.5rem;
+
+        span{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 500;
+        }
+
+
+    }
+
+    &__img{
+        width: 100%;
+        margin-top: 50px;
+
+        img{
+            width: 100%;
+        }
+    }
+ }
