@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shizuru&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
 @font-face {
   font-family: 'Vazir';
   src: url("../font/vazir-font-v16.1.0/Vazir-Bold.ttf");
@@ -18,6 +21,18 @@
 html {
   box-sizing: inherit;
   font-size: 62.5%;
+}
+
+@media only screen and (max-width: 68.75em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 43%;
+  }
 }
 
 body {
@@ -82,6 +97,30 @@ body {
   padding-bottom: 3px;
 }
 
+@media only screen and (max-width: 68.75em) {
+  .sidebar {
+    padding: 1.5rem 14rem;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .sidebar {
+    padding: 1.5rem 10rem;
+  }
+}
+
+@media only screen and (max-width: 43.75em) {
+  .sidebar {
+    padding: 1.5rem 5rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .sidebar {
+    padding: 1.5rem 3rem;
+  }
+}
+
 .sidebar__img {
   width: 60px;
   margin-right: auto;
@@ -141,26 +180,82 @@ body {
   background-color: rgba(238, 238, 238, 0.3);
 }
 
+@media only screen and (max-width: 68.75em) {
+  .content {
+    width: 65%;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .content {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 43.75em) {
+  .content {
+    width: 100%;
+  }
+}
+
 .content__header {
+  border-bottom: 1px solid #d6d6d6;
+  padding-bottom: 3px;
+  padding-top: 3px;
+}
+
+.content__header--item {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
   font-family: sans-serif;
   font-weight: 400;
-  border-bottom: 1px solid #d6d6d6;
-  padding-left: 28rem;
-  padding-bottom: 3px;
-  padding-top: 3px;
+  justify-content: center;
 }
 
-.content__header img {
+.content__header--item--first {
+  display: flex;
+  align-items: center;
+}
+
+.content__header--item--second {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 550px) {
+  .content__header--item {
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+}
+
+.content__header--item img {
   width: 4rem;
 }
 
-.content__header span {
+@media only screen and (max-width: 550px) {
+  .content__header--item img {
+    display: flex;
+  }
+}
+
+.content__header--item span {
   margin-left: 20px;
   color: #777;
   font-size: 16px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .content__header--item span {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .content__header--item span {
+    font-size: 15px;
+  }
 }
 
 .content__header--link {
@@ -170,11 +265,18 @@ body {
   font-weight: 500;
 }
 
+@media only screen and (max-width: 900px) {
+  .content__header--link {
+    padding-top: 2px;
+  }
+}
+
 .content__user {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
   font-family: sans-serif;
+  margin-top: 3rem;
 }
 
 .content__user img {
@@ -308,6 +410,39 @@ body {
 
 .content__user span:not(:first-child) {
   margin-left: 10px;
+}
+
+.content__introduction {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+@media only screen and (max-width: 700px) {
+  .content__introduction {
+    padding: 0 5rem;
+  }
+}
+
+.content__introduction--logo {
+  margin-top: 5px;
+  text-align: center;
+  margin-right: 20px;
+  font-size: 30px;
+  color: #111;
+  line-height: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .content__introduction--logo {
+    font-size: 24px;
+  }
+}
+
+.content__introduction--logo span {
+  display: block;
+  font-family: 'Caveat', cursive;
 }
 
 .content__user--name:hover + .content__user--name--info {
