@@ -71,7 +71,13 @@ body {
 .main__topic {
   margin-top: 50px;
   font-family: "Vazir";
-  font-size: 3.5rem;
+  font-size: 4rem;
+}
+
+@media only screen and (max-width: 350px) {
+  .main__topic {
+    font-size: 25px;
+  }
 }
 
 .main__topic span {
@@ -81,7 +87,7 @@ body {
 
 .main__img {
   width: 100%;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .main__img img {
@@ -186,12 +192,6 @@ body {
   }
 }
 
-@media only screen and (max-width: 56.25em) {
-  .content {
-    width: 80%;
-  }
-}
-
 @media only screen and (max-width: 43.75em) {
   .content {
     width: 100%;
@@ -223,7 +223,7 @@ body {
   align-items: center;
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 700px) {
   .content__header--item {
     flex-direction: column;
     padding: 1rem 0;
@@ -286,6 +286,12 @@ body {
   margin-left: 20px;
 }
 
+@media only screen and (max-width: 550px) {
+  .content__user img {
+    width: 50px;
+  }
+}
+
 .content__user figcaption {
   display: flex;
   flex-direction: column;
@@ -301,9 +307,16 @@ body {
   position: relative;
 }
 
+@media only screen and (max-width: 550px) {
+  .content__user--name {
+    font-size: 15px;
+    transform: translateX(-8px);
+  }
+}
+
 .content__user--name--info {
   position: absolute;
-  top: 140px;
+  top: 170px;
   background-color: #fff;
   left: 340px;
   width: 350px;
@@ -314,6 +327,46 @@ body {
   transform: translateY(10px);
   border: 1px solid #eee;
   box-shadow: 0 0 4rem rgba(17, 17, 17, 0.3);
+}
+
+@media only screen and (min-width: 75em) {
+  .content__user--name--info {
+    left: 38rem;
+    top: 17rem;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .content__user--name--info {
+    left: 29rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .content__user--name--info {
+    left: 20rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .content__user--name--info {
+    top: 22rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .content__user--name--info {
+    top: 30rem;
+    left: -2rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .content__user--name--info {
+    top: 27rem;
+    left: -2rem;
+    width: 300px;
+  }
 }
 
 .content__user--name--info:hover {
@@ -425,6 +478,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 550px) {
+  .content__introduction {
+    padding: 0 0rem;
+  }
+}
+
 .content__introduction--logo {
   margin-top: 5px;
   text-align: center;
@@ -432,9 +491,10 @@ body {
   font-size: 30px;
   color: #111;
   line-height: 1;
+  margin-top: 5px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 550px) {
   .content__introduction--logo {
     font-size: 24px;
   }
@@ -443,6 +503,18 @@ body {
 .content__introduction--logo span {
   display: block;
   font-family: 'Caveat', cursive;
+}
+
+@media only screen and (max-width: 550px) {
+  .content__user--info span {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .content__user--info {
+    transform: translateX(-8px);
+  }
 }
 
 .content__user--name:hover + .content__user--name--info {

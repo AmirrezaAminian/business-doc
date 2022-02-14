@@ -11,9 +11,9 @@
         width: 65%;
     }
 
-    @media only screen and (max-width:$bp-medium) {
-        width: 80%;
-    }
+    // @media only screen and (max-width:$bp-medium) {
+    //     width: 90%;
+    // }
 
     @media only screen and (max-width:$bp-small) {
         width: 100%;
@@ -42,7 +42,7 @@
 
                 align-items: center;
 
-                
+
 
             }
 
@@ -51,10 +51,10 @@
                 align-items: center;
             }
 
-            @media only screen and (max-width:550px) {
+            @media only screen and (max-width:700px) {
                 flex-direction: column;
                 padding: 1rem 0;
-                
+
 
             }
 
@@ -120,7 +120,14 @@
             clip-path: circle(50%);
             width: 60px;
             margin-right: 20px;
-            margin-left: 20px
+            margin-left: 20px;
+
+            @media only screen and (max-width:550px) {
+                width: 50px;
+            }
+
+
+
         }
 
         figcaption {
@@ -138,10 +145,15 @@
             text-decoration: none;
             position: relative;
 
+            @media only screen and (max-width:550px) {
+                font-size: 15px;
+                transform: translateX(-8px);
+            }
+
 
             &--info {
                 position: absolute;
-                top: 140px;
+                top: 170px;
                 background-color: #fff;
                 left: 340px;
                 width: 350px;
@@ -156,6 +168,36 @@
                 box-shadow: 0 0 4rem rgba(#111, 0.3);
 
 
+                @media only screen and (min-width:$bp-largest) {
+                    left: 38rem;
+                    top: 17rem;
+                }
+
+                @media only screen and (max-width:1600px) {
+                    left: 29rem;
+                }
+
+
+                @media only screen and (max-width:1200px) {
+                    left: 20rem;
+                }
+
+                @media only screen and (max-width:900px) {
+                    top: 22rem;
+                }
+
+                @media only screen and (max-width:700px) {
+                    top: 30rem;
+                    left: -2rem;
+                }
+
+                @media only screen and (max-width:550px) {
+                    top: 27rem;
+                    left: -2rem;
+                    width: 300px;
+                }
+
+                 
 
 
                 &:hover {
@@ -280,6 +322,10 @@
             padding: 0 5rem;
         }
 
+        @media only screen and (max-width:550px) {
+            padding: 0 0rem;
+        }
+
 
         &--logo {
             margin-top: 5px;
@@ -288,10 +334,14 @@
             font-size: 30px;
             color: #111;
             line-height: 1;
+            margin-top: 5px;
 
-            @media only screen and (max-width:600px) {
+
+            @media only screen and (max-width:550px) {
                 font-size: 24px;
             }
+
+
 
 
             span {
@@ -309,6 +359,21 @@
 
 
 
+
+
+.content__user--info {
+
+    span {
+
+        @media only screen and (max-width:550px) {
+            font-size: 12px;
+        }
+    }
+
+    @media only screen and (max-width:550px) {
+        transform: translateX(-8px);
+    }
+}
 
 //////////////////////////////////////////@at-root
 
