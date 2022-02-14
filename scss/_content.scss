@@ -1,10 +1,11 @@
 .content {
-    height: 100vh;
-    padding: 2rem;
+
+    padding: 2rem ;
     align-items: center;
     width: 55%;
     margin: 0 auto;
     background-color: rgba(#eee, 0.3);
+    
 
 
     @media only screen and (max-width:$bp-large) {
@@ -17,16 +18,25 @@
 
     @media only screen and (max-width:$bp-small) {
         width: 100%;
+        padding: 2rem 0;
+
     }
 
-    &__header {
 
+
+
+    &__header {
         border-bottom: 1px solid rgb(214, 214, 214);
         // padding-left: 28rem;
         padding-bottom: 3px;
         padding-top: 3px;
 
 
+        @media only screen and (max-width:$bp-small) {
+            width: 100%;
+            padding: 1rem 0;
+
+        }
 
         &--item {
             display: flex;
@@ -35,7 +45,7 @@
             font-family: sans-serif;
             font-weight: 400;
             justify-content: center;
-
+            
 
             &--first {
                 display: flex;
@@ -49,11 +59,15 @@
             &--second {
                 display: flex;
                 align-items: center;
+
+                span{
+                    margin-top: 2px;
+                }
             }
 
             @media only screen and (max-width:700px) {
                 flex-direction: column;
-                padding: 1rem 0;
+               
 
 
             }
@@ -108,26 +122,25 @@
     }
 
 
+
     &__user {
+        
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
         font-family: sans-serif;
         margin-top: 3rem;
-
+    
 
         img {
             clip-path: circle(50%);
             width: 60px;
             margin-right: 20px;
             margin-left: 20px;
-
+            
             @media only screen and (max-width:550px) {
                 width: 50px;
             }
-
-
-
         }
 
         figcaption {
@@ -152,6 +165,7 @@
 
 
             &--info {
+                
                 position: absolute;
                 top: 170px;
                 background-color: #fff;
@@ -188,16 +202,16 @@
 
                 @media only screen and (max-width:700px) {
                     top: 30rem;
-                    left: -2rem;
+                    left: 0rem;
                 }
 
                 @media only screen and (max-width:550px) {
                     top: 27rem;
-                    left: -2rem;
+                    left: 0rem;
                     width: 300px;
                 }
 
-                 
+
 
 
                 &:hover {
@@ -228,6 +242,7 @@
                         position: relative;
                         z-index: 1;
                         transition: all 0.2s;
+                        outline: none;
 
                         &:hover {
                             transform: translateY(-2px);

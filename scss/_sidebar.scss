@@ -44,6 +44,7 @@
         position: relative;
         z-index: 1;
         transition: all 0.2s;
+        outline: none;
 
         &:hover {
             transform: translateY(-2px);
